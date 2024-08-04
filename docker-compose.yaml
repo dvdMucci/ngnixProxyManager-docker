@@ -10,12 +10,12 @@ services:
       - ./config.json:/app/config/production.json
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-  db:
+  mariadb:
     image: 'jc21/mariadb-aria:latest'
     environment:
-      MYSQL_ROOT_PASSWORD: 'npm'
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: 'root'
-      MYSQL_PASSWORD: 'npm'
+      MYSQL_ROOT_PASSWORD: 'cambiar'
+      MYSQL_DATABASE: 'nginx'
+      MYSQL_USER: 'david'
+      MYSQL_PASSWORD: 'cambiar'
     volumes:
       - ./data/mysql:/var/lib/mysql
