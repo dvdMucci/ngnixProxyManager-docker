@@ -12,9 +12,9 @@ services:
   mariadb:
     image: 'jc21/mariadb-aria:latest'
     environment:
-      MYSQL_ROOT_PASSWORD: 'cambiar'
-      MYSQL_DATABASE: 'nginx'
-      MYSQL_USER: 'david'
-      MYSQL_PASSWORD: 'cambiar'
+      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'npm'
     volumes:
       - ./datos/mysql:/var/lib/mysql
