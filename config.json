@@ -1,10 +1,10 @@
 {
   "database": {
     "engine": "mysql",
-    "host": "mariadb",
-    "name": "nginx",
-    "user": "david",
-    "password": "cambiar",
+    "host": "db",
+    "name": "npm",
+    "user": "npm",
+    "password": "npm",
     "port": 3306
   }
 }
