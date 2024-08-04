@@ -8,7 +8,7 @@ services:
       - '443:443'
     volumes:
       - ./config.json:/app/config/production.json
-      - ./data:/data
+      - ./datos:/data
       - ./letsencrypt:/etc/letsencrypt
   mariadb:
     image: 'jc21/mariadb-aria:latest'
@@ -18,4 +18,4 @@ services:
       MYSQL_USER: 'david'
       MYSQL_PASSWORD: 'cambiar'
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ./datos/mysql:/var/lib/mysql
